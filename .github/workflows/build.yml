@@ -17,3 +17,8 @@ jobs:
       run: nuget restore
     - name: Build
       run: dotnet build --configuration Release
+    - name: artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: release
+        path: D:\a\TellTaleWidescreenPatcher\TellTaleWidescreenPatcher\TellTaleWidescreenPatcher\bin\Release\
