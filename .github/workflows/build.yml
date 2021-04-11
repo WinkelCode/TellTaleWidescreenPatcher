@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: nuget
+      run: nuget restore
     - name: Build
       run: dotnet build --configuration Release
